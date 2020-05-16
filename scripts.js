@@ -14,7 +14,7 @@ audio.onended=function(){
 }
 audio.src=tracks[index];
 audio.volume=0;
-setTimeout(function() {audio.play()}, 1000);
+//setTimeout(function() {audio.play()}, 1000);
 
 $(".s_08 .item").click(function(){
 var eee = $(this).text();
