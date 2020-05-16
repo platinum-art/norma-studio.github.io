@@ -1,1 +1,0 @@
-# norma-studio.github.io
