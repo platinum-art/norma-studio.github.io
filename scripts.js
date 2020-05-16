@@ -2,7 +2,7 @@ $(".lazy07").lazyload({effect:"fadeIn"});new WOW().init();setTimeout(function ()
 
 var audio=document.querySelector("#audio");
 var tracks=[
-"C:/OpenServer/domains/norma-studio/Cases-Last-ver2.mp4"
+"https://norma-studio.github.io/Cases-Last-ver2.mp4"
 ];
 var index=0;var status=0;
 audio.onended=function(){
