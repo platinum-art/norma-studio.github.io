@@ -17,7 +17,7 @@ audio.onended=function(){
 audio.src=tracks[index];
 audio.volume=0;
 // setTimeout(function() {audio.play()}, 1000);
-setTimeout(function() {$(".video").addClass("video_act");audio.play();}, 1000);
+// setTimeout(function() {$(".video").addClass("video_act");audio.play();}, 1000);
 $(".img_play").click(function(){$(".video").addClass("video_act");audio.play();});
 $(".video").click(function(){$(this).removeClass("video_act");audio.stop();});
 
