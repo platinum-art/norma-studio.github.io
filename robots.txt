@@ -1,0 +1,3 @@
+User-agent: *
+Host: norma-studio.github.io
+Sitemap: https://norma-studio.github.io/sitemap.xml
