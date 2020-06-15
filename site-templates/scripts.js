@@ -4,7 +4,9 @@ $('[data-remodal-target="modal6"]').click(function(){$(".remodal-wrapper").addCl
 $('[data-remodal-target="modal7"]').click(function(){$(".remodal-wrapper").addClass("remodal-wrapper_act");});
 $('.remodal-close').click(function(){$(".remodal-wrapper").removeClass("remodal-wrapper_act");});
 
-$(".lazy07").lazyload({effect:"fadeIn"});new WOW().init();setTimeout(function () {$('.preload').hide();}, 200);
+$(".lazy07").lazyload({effect:"fadeIn"});new WOW().init();
+
+// setTimeout(function () {$('.preload').hide();}, 200);
 
 var _href7 = window.location.hash;
 var canonical7 = $('link[rel="canonical"]').attr("href");
@@ -26,8 +28,7 @@ $(".s_08 .item").click(function(){
 var eee = $(this).text();
 
 // alert(eee);
-$(".form66 input[name=id66]").attr("value", eee);
-});
+$(".form66 input[name=id66]").attr("value", eee);});
 
 $(".burger").click(function(){
 $(".burger").toggleClass("opened");
@@ -122,8 +123,8 @@ $(document).ready(function() {
     }
   });
 });
-var _href3 = window.location.hostname;var body3 = $('body');var site3 = 'norma-studio.github.io';if (_href3 != site3) {$(body3).remove();}
-document.ondragstart = noselect;document.onselectstart = noselect;document.oncontextmenu = noselect;function noselect() {return false;}
+// var _href3 = window.location.hostname;var body3 = $('body');var site3 = 'norma-studio.github.io';if (_href3 != site3) {$(body3).remove();}
+// document.ondragstart = noselect;document.onselectstart = noselect;document.oncontextmenu = noselect;function noselect() {return false;}
 var input = document.querySelector("#phone66");
     window.intlTelInput(input, {
       initialCountry: "ru",
