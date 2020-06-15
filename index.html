@@ -54,7 +54,9 @@ body{padding:0;margin:0;position:relative;font-size:14px;box-sizing:border-box;f
 a,a:focus,a:active,a:hover{text-decoration:none}*,::before,::after{box-sizing:border-box}
 .s_01{height:auto;background-color:#1a1a1a;
 padding-top:calc((100vw - 320px)/(1920 - 320) * (100 - 50) + 50px);
-padding-bottom:calc((100vw - 320px)/(1920 - 320) * (90 - 40) + 40px)}
+/*padding-bottom:calc((100vw - 320px)/(1920 - 320) * (90 - 40) + 40px)*/
+}
+.wr_video{margin-bottom:calc((100vw - 320px)/(1920 - 320) * (0 - 50 - 10) + 10px)}
 .txt1{color:#fff;
 font-size:calc((100vw - 320px)/(1920 - 320) * (90 - 18) + 18px);
 font-family:'Montserrat',Arial,sans-serif;line-height:1.1;font-weight:300;background-position:center center;border-color:transparent;border-style:solid;margin:0;padding:0}
@@ -73,13 +75,12 @@ font-family: 'Montserrat',Arial,sans-serif;line-height: 1.55;font-weight: 500;bo
 
 .s_02{background:#fff;background:linear-gradient(0deg,rgba(255,255,255,1) 50%,rgba(26,26,26,1) 50%);
 padding:0;
-padding-top:calc((100vw - 320px)/(1920 - 320) * (50 - 20) + 20px);
-padding-bottom:calc((100vw - 320px)/(1920 - 320) * (70 - 30) + 30px);
+/*padding-top:calc((100vw - 320px)/(1920 - 320) * (50 - 20) + 20px);*/
+/*padding-bottom:calc((100vw - 320px)/(1920 - 320) * (70 - 30) + 30px);*/
 }
 .s_02 .wr_txt{width:92%;margin:0 auto}.video{width:100%;height:auto;border-radius:10px;box-shadow:0 5px 45px 0 rgba(0,0,0,0.4);background-color:#fff;display: none;}div,a,p,span,h1,h2,h3,h4,h5,h6,img{outline:none}
 .s_03{padding:0;background-color:#fff;overflow:hidden;
-padding-top:calc((100vw - 320px)/(1920 - 320) * (60 - 20) + 20px);
-padding-bottom:calc((100vw - 320px)/(1920 - 320) * (60 - 20) + 20px)}
+padding-bottom:calc((100vw - 320px)/(1920 - 320) * (60 - 20) + 20px)}.s_03a{padding-top:calc((100vw - 320px)/(1920 - 320) * (60 - 20) + 20px);}
 .txt_p1{color:#1a1a1a;
 font-size:calc((100vw - 320px)/(1920 - 320) * (200 - 30) + 30px);
 font-family:'Montserrat',Arial,sans-serif;line-height:1.1;font-weight:100;background-position:center center;border:none;margin:0;padding:0;text-transform:uppercase;display:block;width:100%;text-align:center}
@@ -89,7 +90,7 @@ padding-bottom:calc((100vw - 320px)/(1920 - 320) * (170 - 40) + 40px)}
 .s_04{background-color:#fff;/*padding:30px*/}
 .s_04 .wr_txt{display:flex;max-width:1200px;width:90%;height:auto;margin:0 auto;justify-content:center;flex-wrap:wrap}
 .s_04 .item{width:calc(100%/2 - 60px);margin:30px;position:relative;top:0;transition:ease .3s top;max-width:540px;height:auto;
-margin-top:calc((100vw - 320px)/(1920 - 320) * (90 - 20) + 20px)}
+margin-top:calc((100vw - 320px)/(1920 - 320) * (90 - 20) + 20px)}.s_04 .item_top:hover{top: -5px;}
 .s_04 .item_a{position:relative;display:block;width:100%;max-height:625px;
 /*height:calc((100vw - 320px)/(1920 - 320) * (625 - 450) + 450px);*/
 height: auto;
@@ -101,18 +102,18 @@ font-size:calc((100vw - 320px)/(1920 - 320) * (38 - 16) + 16px);
 font-family:'Montserrat',Arial,sans-serif;line-height:1.2;font-weight:400;background-position:center center;border-color:transparent;border-style:solid}
 .txt4{
 font-size:calc((100vw - 320px)/(1920 - 320) * (17 - 12) + 12px);
-color:#fff;font-family:'Montserrat',Arial,sans-serif;line-height:1.55;font-weight:400;background-position:center center;border-color:transparent;border-style:solid;text-shadow:1px 1px 0 rgba(0,0,0,.5)}
-.wr_txt4{position:absolute;text-align:left;bottom:0;left:0;width:100%;height:auto;z-index:2;}
+color:#1a1a1a;font-family:'Montserrat',Arial,sans-serif;line-height:1.55;font-weight:400;background-position:center center;border-color:transparent;border-style:solid;text-shadow:1px 1px 0 rgba(0,0,0,.5)}
+.wr_txt4{position:absolute;text-align:left;bottom:0;left:0;width:100%;height:auto;overflow: hidden;z-index:4;opacity: 0;transition: ease .3s opacity, ease .3s padding;transform: translateY(0px);}
 .s_04 .imgh04,.s_04 .p04{padding: calc((100vw - 320px)/(1920 - 320) * (70 - 30) + 30px) calc((100vw - 320px)/(1920 - 320) * (50 - 30) + 30px);}
-.s_04 .wr_txt4{padding: calc((100vw - 320px)/(1920 - 320) * (40 - 30) + 30px) calc((100vw - 320px)/(1920 - 320) * (50 - 30) + 30px);}
-.imgbg04{position:relative;top:0;left:0;z-index:1;width:100%;height:auto;border-radius:20px;overflow:hidden;box-shadow:0 5px 45px 0 rgba(0,0,0,0.4);transition:ease .3s box-shadow}
+.s_04 .wr_txt4{padding: 0 calc((100vw - 320px)/(1920 - 320) * (50 - 30) + 30px);}
+.imgbg04{position:relative;top:0;left:0;z-index:1;width:100%;height:auto;border-radius:20px;overflow:hidden;box-shadow: 0 0 40px 0 rgba(0,0,0,.45);transition:ease .3s box-shadow}
 .imgh04{position:absolute;top:0;left:0;z-index:3;width:100%;height:auto;box-sizing:border-box;}
 .imgarrow04{position:absolute;bottom:-4%;right:-5%;z-index:4;transition:ease .7s all;height:auto;
 width:calc((100vw - 320px)/(1920 - 320) * (75 - 30) + 30px);
-transform:scale(1);max-width:92px;min-width:50px}.s_04 .item a:hover .imgbg04{box-shadow:0 5px 45px 0 rgba(0,0,0,0.55)}.s_04 .item a:hover .imgarrow04{right:-40px;transform:scale(1.03)}
+transform:scale(1);max-width:92px;min-width:50px}.s_04 .item a:hover .imgbg04{box-shadow: 0 0 50px 0 rgba(0,0,0,.75);}.s_04 .item a:hover .imgarrow04{right:-40px;transform:scale(1.03)}
 .s_04a{
 padding-bottom:calc((100vw - 320px)/(1920 - 320) * (90 - 30) + 30px)}
-.item_center{display:flex;align-items:center}.p04{color:#fff;font-family:'Montserrat',Arial,sans-serif;line-height:1.1;font-weight:600;border:none;position:absolute;top:0;left:0;z-index:3;width:100%;height:auto;box-sizing:border-box;margin:0;}
+.item_center{display:flex;align-items:center}.p04{color:#4e28db;font-family:'Montserrat',Arial,sans-serif;line-height:1.1;font-weight:600;border:none;position:absolute;top:0;left:0;z-index:3;width:100%;height:auto;box-sizing:border-box;margin:0;}
 .p04a{
 font-size:calc((100vw - 320px)/(1920 - 320) * (55 - 28) + 26px)}
 .p04b{
@@ -121,121 +122,179 @@ font-size:calc((100vw - 320px)/(1920 - 320) * (55 - 25) + 24px)}
 font-size:calc((100vw - 320px)/(1920 - 320) * (75 - 28) + 28px)}
 .txt4_b{color:#1a1a1a;text-shadow:1px 1px 0 rgba(0,0,0,.0)}.fw500{font-weight:500}
 
-.img02{width:100%;height:auto;border-radius:10px;box-shadow:0 5px 45px 0 rgba(0,0,0,0.4);background-color:#fff;position: relative;z-index: 2;}.img_play{position: absolute;top: 49%;left: 50%;transform: translate(-50%, -50%);transition: ease .3s opacity;opacity: 1;cursor: pointer;z-index: 3;
+.img02a{width:100%;height:auto;border-radius:0px;box-shadow:0 5px 45px 0 rgba(0,0,0,0);background-color:rgba(0,0,0,0);position: relative;z-index: 2;}
+.img_play{position: absolute;top: 49%;left: 50%;transform: translate(-50%, -50%);transition: ease .3s opacity;opacity: 1;cursor: pointer;z-index: 3;
 width: calc((100vw - 320px)/(1920 - 320) * (170 - 80) + 80px);
 height: auto;}.wr_video{position: relative;}.img_play:hover{opacity: 1;}.video_act{display: block;z-index: 5;position: absolute;top: 0;left: 0;}
+
+.item_a1{line-height: 0;}
+.item_a1:before{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 2;background-color: rgba(0,0,0,1);content: '';border-radius: 20px;
+transition: ease .3s opacity,ease .3s background;
+background: rgb(255,255,255);background: linear-gradient(0deg, rgba(255,255,255,0.1) 00%, rgba(255,255,255,0.95) 100%);
+opacity: .8;}
+.item_a1 .txt4{font-weight: 600;}
+.item_a1:hover:before{opacity: 1;background: linear-gradient(0deg, rgba(255,255,255,0.7) 00%, rgba(255,255,255,0.95) 100%);}
+.item_a1:hover .wr_txt4{opacity: 1;transform: translateY(0px);
+padding: calc((100vw - 320px)/(1920 - 320) * (40 - 30) + 30px) calc((100vw - 320px)/(1920 - 320) * (50 - 30) + 30px);
+}
+.p04z {font-size: calc((100vw - 320px)/(1920 - 320) * (55 - 28) + 28px);text-shadow: 1px -1px 0 rgba(0,0,0,.99);transition: ease .3s text-shadow;}
+.p04z b{text-transform: uppercase;position: relative;}.item_a1:hover .p04z{text-shadow: 7px -7px 0 rgba(0,0,0,.3);}
+@media only screen and (max-width: 480px){.item_a1:before {border-radius: 10px;}}
+
 
 </style>
 </head><body class="body"><div class="preload" style="position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background-color: #fff;display: block;z-index: 100000;opacity: 1;transition: ease .3s opacity;overflow: hidden;text-align: center;max-width: 100%;"></div>
 
-<!-- <div class="s_00 sec"></div> -->
-<div class="s_01 sec" id="ex1"><div class="col"><div class="wr_txt"><div class="item item1"><h1 class="txt1 wow fadeIn" data-wow-delay="0.4s">Делаем сайты и посадочные страницы, которые приносят клиентов</h1></div><div class="item item2"> <h2 class="txt2 wow fadeIn" data-wow-delay="0.5s">Упакуем ваш продукт в понятный сайт с отличным дизайном и продуманным контентом</h2> <div class="wr_btn wow fadeIn" data-wow-delay="0.6s"><a class="btn" data-remodal-target="modal5" title="Разработка сайтов от Norma Studio">Заказать проект</a></div></div></div></div></div>
+<div class="s_01 sec" id="ex1"><div class="col"><div class="wr_txt"><div class="item item1"><h1 class="txt1 wow fadeIn" data-wow-delay="0.4s"><span style="font-weight: 500;">Сайты и посадочные страницы</span>, которые приносят прибыль и окупаются за 1 неделю.</h1></div><div class="item item2"> <h2 class="txt2 wow fadeIn" data-wow-delay="0.5s"><span style="font-weight: 600;">2500+</span> дизанов сайтов <span style="white-space: nowrap;font-weight: 600;">от 500 ₽. </span> Разработаем и запустим сайт <span style="white-space: nowrap;">от 2 дней</span>. <span style="white-space: nowrap;font-weight: 600;">Более 1250</span> реализованных проектов. <span style="white-space: nowrap;font-weight: 600;">3 года опыта</span>.</h2> <div class="wr_btn wow fadeIn" data-wow-delay="0.6s"><a class="btn" data-remodal-target="modal5" title="Разработка сайтов от Norma Studio">Заказать проект</a></div></div></div></div></div>
 
 <div class="s_02 sec"><div class="wr_txt">
     <div class="wr_video wow fadeIn" data-wow-delay="0.8s">
-<img class="img02 lazy07" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/02s.webp" data-srcset="i/02s_900.webp 900w, i/02s.webp 1024w" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-<img class="img_play lazy07" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/play.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<img class="img02 img02a lazy07" src="i/banner-copy-min.webp" data-src="i/banner-copy.webp" data-srcset="i/banner-copy-900.webp 900w, i/banner-copy.webp 1024w" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
 <video id="audio" class="video" preload="none" controls loop="loop"></video>
     </div>
 </div></div>
 <div id="ex3" class="s_03 sec"><div class="wr_txt wow fadeIn" data-wow-delay="0.3s"><span class="txt_p1 anim1">Design</span><span class="txt_p1 anim2">Design</span></div></div>
 
 <div id="ex4" class="s_04 sec"><div class="wr_txt"><div class="item item_center wow fadeIn" data-wow-delay="0.1s"><h2 class="txt3 wow fadeInUp" data-wow-delay="0.5s">
-<a class="txt4_b fw500" href="site-templates/index.html#p105" target="_blank" title="Разработка сайтов от Norma Studio">Посадочная страница</a> или <a class="txt4_b fw500" href="site-templates/index.html#p105" target="_blank" title="Разработка сайтов от Norma Studio">промо-сайт</a>. Более 5000 дизайнов сайтов для всех сфер деятельности
-<span class="wow fadeInUp" data-wow-delay="0.6s">от 500 ₽</span></h2></div>
 
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="http://prospectorpotatosolutions.tilda.ws/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Сайт-визитка для компании, занимающейся поставкой картофельных хлопьев в Европу.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/041a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/041b.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://drymonster.com/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 60%;">Промо-сайт на русском и английском языке для бренда Dry Monster.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/042a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/042b.webp" width="50" height="50" style="max-width: 80%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-<div class="item item_d"></div><div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://rockettrip.ru/oriental" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Тур на космодром "Восточный". Посадочная страница с информацией о туре.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/043a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/043b.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://inskill.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 70%;">Онлайн-платформа для фитнес-тренеров и их клиентов.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/044a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/044b.webp" width="50" height="50" style="max-width: 70%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-<div class="item item_d"></div><div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://sg-media.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 80%;">Посадочная страница для направления корпоративной фото- и видеосъемки.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/045a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/045b.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://taigasoundprod.com/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 80%;">Промо-сайт на русском и английском языке для студии саунд-продакшена.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/046a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/046b.webp" width="50" height="50" style="max-width: 90%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-<div class="item item_d"></div><div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://gk-legal.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Посадочная страница для юридической фирмы, занимающейся вопросами семейного права.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/047a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/047b.webp" width="50" height="50" style="max-width: 90%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="http://бавария72.рф/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 70%;">Посадочная страница коттеджного поселка в Тюмени.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/048a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><p class="p04 p04a">Бавария — коттеджный поселок</p><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-<div class="item item_d"></div><div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://insta-premium.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 80%;">Посадочная страница для специалиста по продвижению в Инстаграм.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/049a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><p class="p04 p04b txt4_b">Комплексное продвижение в Instagram</p><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://my.readymag.com/u34324459/1464349/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 80%;">Курс по маркетингу и продвижению в интернете для малого бизнеса.</h4></div><img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/040a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><p class="p04 p04c">Курс Бизнесхак</p><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a></div>
-<div class="item item_d"></div></div></div>
-
-<div id="ex5" class="s_04 s_04a sec">
-<div class="wr_txt">
-<div class="item item_center wow fadeIn" data-wow-delay="0.1s">
-<h2 class="txt3 wow fadeInUp" data-wow-delay="0.5s">
-<a class="txt4_b fw500" href="site-templates/index.html#p107" target="_blank" title="Разработка сайтов от Norma Studio">Корпоративный сайт</a>. Более 5000 дизайнов сайтов для всех сфер деятельности<span class="wow fadeInUp" data-wow-delay="0.6s">от 500 ₽</span></h2></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://www.etagi-grozny.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 60%;">Сайт агентства недвижимости "Этажи" в Грозном</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a1a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a1b.webp" width="50" height="50" style="max-width: 70%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://rta-moscow.com/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 90%;">Реализовали верстку на Тильде корпоративного сайта R:TA — топ-4 среди Performance агентств по версии Тэглайн.</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a2a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a2b.webp" width="50" height="50" style="max-width: 65%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item item_d"></div>
-<div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="http://fitrium.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 75%;">Сайт пространства для фитнеса и образования от создателей X-FIT.</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a3a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a3b.webp" width="50" height="50" style="max-width: 95%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://highschool.su/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 60%;">Курсы английского языка в Новосибирске для взрослых и детей.</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a4a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a4b.webp" width="50" height="50" style="max-width: 75%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item item_d"></div>
-<div class="item item_d"></div>
+<b>2500+ дизайнов сайтов.</b><br> Для всех сфер деятельности. <b>Выберите</b> тот, который подходит именно вам!<span class="wow fadeInUp" data-wow-delay="0.6s"><b>от 500 ₽</b></span></h2></div>
 
 
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://artek30.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 65%;">Сайт для компании - организатора активных путешествий по всему миру</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a5a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a5b.webp" width="50" height="50" style="max-width: 80%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://porezoff.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 65%;">Ремонт проколов, порезов и шиномонтаж на месте.</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a6a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-<p class="p04 p04a txt4_b">Мобильный шиномонтаж</p>
-<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
-<div class="item item_d"></div>
-<div class="item item_d"></div>
-
-<div class="item wow fadeIn" data-wow-delay="0.3s"><a class="item_a" href="https://www.liton.ru/" rel="nofollow" target="_blank" title="Разработка сайтов от Norma Studio">
-<div class="wr_txt4"><h4 class="txt4 txt4_b fw500 wow fadeInUp" data-wow-delay="0.5s" style="max-width: 65%;">Liton — производство упаковки для молочных продктов.</h4></div>
-<img class="lazy07 imgbg04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a7a.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgh04" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/04a7b.webp" width="50" height="50" style="max-width: 95%;" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"><img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
-</a></div>
-
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/canvas.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Самый продаваемый многоцелевой и мощный шаблон Bootstrap 4 с 1000+ нишами, многостраничными и одностраничными макетами и 1200+ функциями пользовательского интерфейса.</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/canvas-min.webp" data-src="img/canvas.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Canvas</b><br>70+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
 </div>
 
-<div class="wr_btn wow fadeIn" data-wow-delay="0.6s" style="margin-left: auto;margin-right: auto;"><a class="btn btn_s02" href="site-templates/index.html#100" target="_blank" title="Разработка сайтов от Norma Studio">Посмотреть еще</a></div>
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/porto.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Porto просто лучший выбор для вашего нового сайта. Шаблон уже несколько лет входит в число самых популярных в мире. Проверено тысячами покупателей.</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/porto-min.webp" data-src="img/porto.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Porto</b><br>80+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
+</div>
+
+<div class="item item_d"></div><div class="item item_d"></div>
+
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/polo.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Мощный, легкий и красивый. 220+ Макеты Демо. 700+ многостраничных и одностраничных шаблонов. Легкий вес Легко настроить. 1000+ UI</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/polo-min.webp" data-src="img/polo.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Polo</b><br>220+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
+</div>
+
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/ezy.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">EZY был создан, чтобы помочь людям по всему миру начать новый проект с очень солидной платформой для работы. Наслаждайтесь гибкостью для любого стиля дизайна.</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/ezy-min.webp" data-src="img/ezy.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Ezy</b><br>40+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
+</div>
+
+<div class="item item_d"></div><div class="item item_d"></div>
+
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/betheme.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">Готовые сайты идеально подходят для любого бизнеса! 540+ Макеты Демо. Выберите сайт своей мечты!</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/polo-min.webp" data-src="img/polo.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Be Theme</b><br>540+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
+</div>
+
+<div class="item item_top wow fadeIn" data-wow-delay="0.3s"><a class="item_a item_a1" href="site-templates/ezy.html" target="_blank" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio"><div class="wr_txt4"><h4 class="txt4 wow fadeInUp" data-wow-delay="0.5s">EZY был создан, чтобы помочь людям по всему миру начать новый проект с очень солидной платформой для работы. Наслаждайтесь гибкостью для любого стиля дизайна.</h4></div>
+<img class="lazy07 imgbg04 imgbg04a" src="img/ezy-min.webp" data-src="img/ezy.webp" width="50" height="50" title="Разработка сайтов от Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio">
+<p class="p04 p04z"><b>Ezy</b><br>40+ дизайнов сайтов</p>
+<img class="lazy07 imgarrow04 wow fadeIn" data-wow-delay="0.7s" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="i/right-arrow.webp" width="50" height="50" title="Посмотреть примеры готовых сайтов от 500 ₽ | Norma Studio" alt="Делаем сайты и посадочные страницы, которые приносят клиентов | Norma Studio"></a>
+</div>
+
+<div class="item item_d"></div>
+
+</div></div>
+
+<div id="ex5" class="s_04 s_04a sec">
+
+<div class="wr_btn wow fadeIn" data-wow-delay="0.6s" style="margin-left: auto;margin-right: auto;display: none;"><a class="btn btn_s02" href="site-templates/index.html#100" target="_blank" title="Разработка сайтов от Norma Studio">Посмотреть еще</a></div>
 </div>
 
 
 <div class="s_05 sec"><div class="wr_black"></div><div id="num" class="num num1">0</div><div class="txt05 wow fadeIn" data-wow-delay="0.3s">Реализовано проектов для микро- и малого бизнеса. <a href="site-templates/portfolio.html" target="_blank" title="Разработка сайтов от Norma Studio">Посмотреть портфолио</a></div></div>
 
 
+<div class="s_23 sec"><div class="col">
+<h2 style="text-align: center;" class="txt1 wow fadeIn txt4_b" data-wow-delay="0.3s">Тарифы</h2>
+
+<div class="wr_item23">
+<div class="item23 item23a">
+<h4 class="h23 orange">Start</h4>
+<h5 class="txt_h22 black"><span class="price04c black">500 ₽  <strike class="black">1000 ₽</strike></span>/месяц</h5>
+<div class="line04c orangebg"></div>
+<p class="txt_h14 txt04c black"><span class="act04c1">✓</span><span class="act04c2"> 1 Проект </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c1">✓</span><span class="act04c2"> Одностраничный сайт </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> Многостраничный сайт </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> SSL сертификаты (https://) </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> А/Б Тестирование </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> Мультилендинг </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> Геолендинг </span></p>
+<p class="txt_h14 txt04c black"><span class="act04c3">✗</span><span class="act04c3"> Реклама в Яндекс Директ </span></p>
+<div class="wr_btn wr_btn1"><a class="btn btn_s02" value="Заказ-Тариф-Start-за-500₽" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">Заказать</a></div>
+</div>
+<div class="item23 item23b">
+<h4 class="h23">Standart</h4>
+<h5 class="txt_h22"><span class="price04c">1000 ₽  <strike>2000 ₽</strike></span>/месяц</h5>
+<div class="line04c"></div>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> 1 Проект </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Одностраничный сайт </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Многостраничный сайт </span></p>
+<p class="txt_h14 txt04c"><span class="act04c3">✗</span><span class="act04c3"> SSL сертификаты (https://) </span></p>
+<p class="txt_h14 txt04c"><span class="act04c3">✗</span><span class="act04c3"> А/Б Тестирование </span></p>
+<p class="txt_h14 txt04c"><span class="act04c3">✗</span><span class="act04c3"> Мультилендинг </span></p>
+<p class="txt_h14 txt04c"><span class="act04c3">✗</span><span class="act04c3"> Геолендинг </span></p>
+<p class="txt_h14 txt04c"><span class="act04c3">✗</span><span class="act04c3"> Реклама в Яндекс Директ </span></p>
+<div class="wr_btn"><a class="btn btn_s02" value="Заказ-Тариф-Standart-за-1000₽" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">Заказать</a></div>
+</div>
+<div class="item23 item23c">
+<h4 class="h23">Business</h4>
+<h5 class="txt_h22"><span class="price04c">3000 ₽ <strike>6000 ₽</strike></span>/месяц</h5>
+<div class="line04c"></div>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> 3 Проект </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Одностраничный сайт </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Многостраничный сайт </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> SSL сертификаты (https://) </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> А/Б Тестирование </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Мультилендинг </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Геолендинг </span></p>
+<p class="txt_h14 txt04c"><span class="act04c1">✓</span><span class="act04c2"> Реклама в Яндекс Директ </span></p>
+<div class="wr_btn"><a class="btn btn_s02" value="Заказ-Тариф-Business-за-2000₽" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">Заказать</a></div>
+</div>
+</div>
+</div></div>
+<style>
+.s_23{height:auto;background-color:#fff;
+padding-top:calc((100vw - 320px)/(1920 - 320) * (130 - 50) + 50px);
+padding-bottom:calc((100vw - 320px)/(1920 - 320) * (90 - 40) + 40px)
+}.wr_item23{display:flex;justify-content:space-between;width:92%;margin:0 auto;padding-top: calc((100vw - 320px)/(1920 - 320) * (50 - 20) + 20px)}
+.item23{width:calc(100%/3 - 30px);margin:15px;position:relative;top:0;transition:ease .3s all;height:auto;padding: calc((100vw - 320px)/(1920 - 320) * (70 - 30) + 30px) calc((100vw - 320px)/(1920 - 320) * (50 - 30) + 30px);box-sizing: border-box;border-radius: 20px;overflow: hidden;box-shadow: 0 0 40px 0 rgba(0,0,0,.45);transform: scale(1);}
+.item23a{background-color: #fff;}
+.item23b{background-color: #5733e8;}
+.item23c{background: rgb(238,31,31);background: linear-gradient(355deg, rgba(238,31,31,1) 00%, rgba(238,184,31,1) 100%);}
+.item23:hover {box-shadow: 0 0 50px 0 rgba(0,0,0,.75);top:-5px;transform: scale(1.01);}
+.h23{color:#fff;font-family:'Montserrat',Arial,sans-serif;line-height:1.55;font-weight:600;margin:0;text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+font-size:calc((100vw - 320px)/(1920 - 320) * (64 - 25) + 25px);
+padding:0}
+.s_23 .txt_h22 {text-align: left;color: #fff;text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.price04c {font-size: calc((100vw - 320px)/(1920 - 320) * (35 - 25) + 25px);font-weight: 700;line-height: 1.2;color: #fff;position: relative;}
+.price04c strike {font-size: calc((100vw - 320px)/(1920 - 320) * (16 - 13) + 13px);font-weight: 700;line-height: 1.2;color: #fff;position: absolute;top: -12px;right: 1px;z-index: 2;}
+.line04c {width: 95%;height: 1px;background-color: #fff;margin: 0 0 25px;}
+.s_23 .txt_h14 {margin-top: 13px;margin-bottom: 0;font-weight: 500;color: #fff;font-size: calc((100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);line-height: 1.5;text-shadow: 1px 1px 1px rgba(0,0,0,.3);}.act04c3{opacity: .5;}
+.s_23 .wr_btn {margin-left: auto;margin-right: auto;}
+.s_23 .wr_btn1 .btn_s02 {background-color: #1a1a1a;border-color: #1a1a1a;color: #fff;}
+.s_23 .wr_btn1 .btn_s02:hover {background-color: #fff;border-color: #1a1a1a;color: #1a1a1a;}
+.s_23 .btn:hover {background-color: #1a1a1a;border-color: #1a1a1a;color: #ffffff;}
+.item23a .orange{color: #ee431f;}
+.item23a .orangebg{background-color: #ee431f;}
+.item23a .black{color: #1a1a1a;}
+@media only screen and (max-width: 1150px){.wr_item23 {flex-wrap: wrap;justify-content: center;}.item23{width: 100%;max-width: 400px;}}
+</style>
+
 
 <div id="ex2" class="s_01 s_01a sec" id="ex1"><div class="col"><div class="wr_txt"><div class="item item1"><h2 class="txt1 wow fadeIn txt4_b" data-wow-delay="0.3s">Создаем эффективные и понятные сайты с отличным дизайном</h2></div><div class="item item2">
-<h2 class="txt2 wow fadeIn txt4_b fw500" data-wow-delay="0.5s">Разработка <a class="txt4_b fw500" href="site-templates/index.html#p105" target="_blank" title="Разработка сайтов от Norma Studio">лендингов</a> и <a class="txt4_b fw500" href="site-templates/index.html#p107" target="_blank" title="Разработка сайтов от Norma Studio">корпоративных сайтов</a></h2>
-<div class="wr_btn wow fadeIn" data-wow-delay="0.6s"><a class="btn btn_s02" href="site-templates/index.html#100" target="_blank" title="Разработка сайтов от Norma Studio">Посмотреть</a></div>
+<h2 class="txt2 wow fadeIn txt4_b fw500" data-wow-delay="0.5s">Разработка <a style="cursor: pointer;" class="txt4_b fw500" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">лендингов</a> и <a style="cursor: pointer;" class="txt4_b fw500" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">корпоративных сайтов</a></h2>
+<div class="wr_btn wow fadeIn" data-wow-delay="0.6s"><a class="btn btn_s02" data-remodal-target="modal6" target="_blank" title="Разработка сайтов от Norma Studio">Заказать</a></div>
 </div></div></div></div>
+
 
 
 <div class="s_06 sec"><div class="col"><div class="wr_txt wr_txt61">
@@ -284,7 +343,7 @@ height: auto;}.wr_video{position: relative;}.img_play:hover{opacity: 1;}.video_a
 </div></div></div>
 
 
-<div class="s_03 sec"><div class="wr_txt wow fadeIn" data-wow-delay="0.3s"><span class="txt_p1 anim1">Norma</span><span class="txt_p1 anim2">Norma</span></div></div>
+<div class="s_03 s_03a sec"><div class="wr_txt wow fadeIn" data-wow-delay="0.3s"><span class="txt_p1 anim1">Norma</span><span class="txt_p1 anim2">Norma</span></div></div>
 
 
 <div id="ex2" class="s_01 s_01c sec" id="ex1"><div class="col"><div class="wr_txt"><div class="item item1"><h2 class="txt1 wow fadeIn txt4_b" data-wow-delay="0.3s">Бесплатно разработаем прототип вашего сайта, предложим структуру и 5 вариантов визуальных решений. <br><br> Предложим варианты стоимости и сроков реализации проекта. <!-- <br><br> Пройдите бриф:  --></h2></div></div></div><div class="item2"><h2 class="txt2 wow fadeIn" data-wow-delay="0.5s">Уже есть ТЗ или нет желания заполнять бриф? <br><br><a data-remodal-target="modal5" title="Разработка сайтов от Norma Studio">Оставьте контакты,</a> мы выясним задачу по телефону или email.</h2></div></div>
@@ -304,20 +363,22 @@ height: auto;}.wr_video{position: relative;}.img_play:hover{opacity: 1;}.video_a
 <div class="foot_txt wow fadeIn" data-wow-delay="0.3s">Подписывайтесь: 
     <a href="https://vk.com/" target="_blank" title="Разработка сайтов от Norma Studio">Вконтакте</a> и 
     <a href="https://www.instagram.com/" target="_blank" title="Разработка сайтов от Norma Studio">Instagram</a>!
-</div></div><div class="item"><form class="form77 modal_form44 wow fadeIn" data-wow-delay="0.3s"><div class="modal_sub"><span>Сообщение отправлено!</span></div><input type="hidden" name="id77" value="form77"><input class="input7" name="name77" type="text" placeholder="Ваше имя" maxlength="30"><input class="input7 validate" name="phone77" type="tel" placeholder="Ваш номер" id="phone77" maxlength="14" required><textarea class="textarea7" name="message77" placeholder="Напишите нам о своих задачах. Ответим в течение часа в рабочее время."></textarea><div class="wr_btn wow fadeIn" data-wow-delay="0.5s"><a class="btn button77" title="Разработка сайтов от Norma Studio">Отправить письмо</a></div><div class="valid" style="color: red;margin-top: 5px;margin-bottom: 25px;font-size: 13px;"></div></form><span class="survey">Нажимая на кнопку, вы даете согласие на обработку своих <a href="policy.html" target="_blank" style="white-space: nowrap;" title="Разработка сайтов от Norma Studio">персональных данных</a>.</span></div></div></div>
+</div></div><div class="item"><form class="form77 modal_form44 wow fadeIn" data-wow-delay="0.3s"><div class="modal_sub"><span>Сообщение отправлено!</span></div><input type="hidden" name="id77" value="form77"><input class="input7" name="name77" type="text" placeholder="Ваше имя" maxlength="30"><input class="input7 validate" name="phone77" type="tel" placeholder="Ваш номер" id="phone77" maxlength="14" required><textarea class="textarea7" name="message77" placeholder="Напишите нам о своих задачах. Ответим в течение часа в рабочее время."></textarea><div class="wr_btn wow fadeIn" data-wow-delay="0.5s"><a class="btn button77" title="Разработка сайтов от Norma Studio">Отправить письмо</a></div><div class="valid" style="color: red;margin-top: 5px;margin-bottom: 25px;font-size: 13px;"></div></form><span class="survey">Нажимая на кнопку, вы даете согласие на обработку своих <a href="https://norma-studio.github.io/opl/dogovor/policy.html" target="_blank" style="white-space: nowrap;" title="Разработка сайтов от Norma Studio">персональных данных</a>.</span></div></div></div>
 
 
 <div class="s_10 sec"><span class="survey"><script type="text/javascript">var d = new Date(); document.write("Copyright &copy; 2017 - " + d.getFullYear() + " г. Все права защищены.");</script> <a href="https://norma-studio.github.io" style="white-space: nowrap;" title="Разработка сайтов от Norma Studio">norma-studio.github.io</a></span></div>
 
 <div class="wr_mnu"><div class="mnu">
-<span class="menu-ex"><a class="a_mnu0" href="#ex1" title="Разработка сайтов от Norma Studio">Главная</a></span>
-<span><a class="a_mnu1" href="site-templates/index.html#p105" target="blank" title="Разработка сайтов от Norma Studio">Посадочные страницы</a></span>
-<span><a class="a_mnu2" href="site-templates/index.html#p107" target="blank" title="Разработка сайтов от Norma Studio">Корпоративные сайты</a></span>
-<span><a class="a_mnu3" href="site-templates/index.html#p100" target="blank" title="Разработка сайтов от Norma Studio">Шаблоны сайтов</a></span>
+<span class="menu-ex"><a class="" href="#ex1" title="Разработка сайтов от Norma Studio">Главная</a></span>
+
+<span class="menu-ex"><a class="" href="#ex4" title="Разработка сайтов от Norma Studio">Дизайн сайтов</a></span>
 <span><a class="a_mnu4" href="site-templates/portfolio.html" target="_blank" title="Портфолио по разработке сайтов от Norma Studio">Портфолио</a></span>
-<span class="menu-ex"><a class="a_mnu5" href="#ex2" title="Разработка сайтов от Norma Studio">Услуги</a></span>
-<span class="menu-ex"><a class="a_mnu6" href="#ex6" title="Разработка сайтов от Norma Studio">Контакты</a></span>
-<span><a data-remodal-target="modal5" title="Разработка сайтов от Norma Studio" style="color: #5733e8;cursor: pointer;border-bottom: 1px solid #5733e8;">Заказать сайт</a></span>
+<span class="menu-ex"><a class="" href="#ex2" title="Разработка сайтов от Norma Studio">Услуги</a></span>
+<span><a class="a_mnu10" href="site-templates/testimonials.html" target="_blank" title="Отзывы клиентов | Разработка сайтов от Norma Studio">Отзывы</a></span>
+<span class="menu-ex"><a class="" href="#ex6" title="Разработка сайтов от Norma Studio">Контакты</a></span>
+
+<span><a data-remodal-target="modal5" title="Разработка сайтов от Norma Studio" style="color: #5733e8;cursor: pointer;border-bottom: 1px solid #5733e8;">Заказать</a></span>
+
 </div></div>
 
 <div class="wr_btn2 dn" data-remodal-target="modal4">Консультация по сайту</div>
@@ -367,7 +428,7 @@ height: auto;}.wr_video{position: relative;}.img_play:hover{opacity: 1;}.video_a
                 <div class="valid" style="color: red;margin-top: 5px;margin-bottom: 25px;font-size: 13px;"></div>
                 <div class="wr_btn"><a class="btn button55" title="Разработка сайтов от Norma Studio">Отправить</a></div>
             </form>
-            <span class="survey">Отправляя форму, вы соглашаетесь с <a href="policy.html" target="_blank" title="Разработка сайтов от Norma Studio">политикой обработки персональных данных</a>.</span>
+            <span class="survey">Отправляя форму, вы соглашаетесь с <a href="https://norma-studio.github.io/opl/dogovor/policy.html" target="_blank" title="Разработка сайтов от Norma Studio">политикой обработки персональных данных</a>.</span>
         </div>
 
 </div>
@@ -383,7 +444,7 @@ height: auto;}.wr_video{position: relative;}.img_play:hover{opacity: 1;}.video_a
                 <div class="valid" style="color: red;margin-top: 5px;margin-bottom: 25px;font-size: 13px;"></div>
                 <div class="wr_btn"><a class="btn button66" title="Разработка сайтов от Norma Studio">Отправить</a></div>
             </form>
-            <span class="survey">Отправляя форму, вы соглашаетесь с <a href="policy.html" target="_blank" title="Разработка сайтов от Norma Studio">политикой обработки персональных данных</a>.</span>
+            <span class="survey">Отправляя форму, вы соглашаетесь с <a href="https://norma-studio.github.io/opl/dogovor/policy.html" target="_blank" title="Разработка сайтов от Norma Studio">политикой обработки персональных данных</a>.</span>
         </div>
 
 </div>
