@@ -158,7 +158,7 @@ $(document).ready(function() {
           // $('.modal_form44').addClass('modal_form_act');
           // $('.modal_sub').addClass('modal_sub_act');
 
-                $.post('https://eveprest.ru/submit/submit.php',{
+                $.post('https://eveprest.ru/submit/norma-testim.php',{
                     name:$('[name="name6"]').val(),
                     phone:$('[name="phone6"]').val(),
                     id:$('[name="id6"]').val(),
