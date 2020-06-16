@@ -51,7 +51,7 @@ var articles101 = {
 
 "208030":[{"id":"208030", "btn":"002", "name":"backyard", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/backyard/index.html"}],
 "208031":[{"id":"208031", "btn":"002", "name":"bakery", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/bakery/index.html"}],
-"208032":[{"id":"208032", "btn":"002", "name":"bakery2", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/bakery2/index.html"}],
+// "208032":[{"id":"208032", "btn":"002", "name":"bakery2", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/bakery2/index.html"}],
 "208033":[{"id":"208033", "btn":"002", "name":"balay", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/balay/index.html"}],
 "208034":[{"id":"208034", "btn":"002", "name":"balita", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/balita/index.html"}],
 "208035":[{"id":"208035", "btn":"002", "name":"barcut", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/barcut/index.html"}],
@@ -369,6 +369,7 @@ var articles101 = {
 "208340":[{"id":"208340", "btn":"002", "name":"yummy", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/yummy/index.html"}],
 "208341":[{"id":"208341", "btn":"002", "name":"zeedapp", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/zeedapp/index.html"}],
 
+"208342":[{"id":"208342", "btn":"002", "name":"tasnm-brand-shop", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/templates/tasnm-brand-shop/index.html"}],
 };
 
 
