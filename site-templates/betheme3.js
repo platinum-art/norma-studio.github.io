@@ -446,7 +446,7 @@ var articles101 = {
 
 setTimeout(function () {
 $.each(articles101,function(key,data) {$.each(data, function(index,value) {
-$('.wr_templetes').append(`<a id="id${value['id']}" href="demo/betheme3.html#${value['id']}" target="_blank" class="templetes templetes${value['btn']} ${value['theme']}" title="Посмотреть дизайн сайта ${value['name']}">
+$('.wr_templetes').append(`<a id="id${value['id']}" href="http://demo.eveprest.ru/site-templates/demo/betheme3.html#${value['id']}" target="_blank" class="templetes templetes${value['btn']} ${value['theme']}" title="Посмотреть дизайн сайта ${value['name']}">
 <img class="lazy77" src="betheme3/${value['id']}-min.webp" data-src="betheme3/${value['id']}.webp" width="50" height="50" alt="Разработка сайтов от Norma Studio" title="Посмотреть дизайн сайта ${value['name']}">
 <span class="span1 btn_id22" title="Посмотреть дизайн сайта ID #${value['id']}">ID #${value['id']}</span>
 <span class="span2" title="Посмотреть дизайн сайта ${value['name']}">${value['name']}</span>
