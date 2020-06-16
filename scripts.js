@@ -8,10 +8,10 @@ $('.remodal-close').click(function(){$(".remodal-wrapper").removeClass("remodal-
 
 var _href7 = window.location.hash, canonical7 = $('link[rel="canonical"]').attr("href"), canonicalLink1 = 'https://norma-studio.github.io/', cl11 = '#ex1', cl12 = '#ex2', cl16 = '#ex6', cl10 = 'index.html';
 
-if((canonical7+cl10+cl11) == (canonicalLink1+cl10+_href7)){$(".mnu span:eq(0) a").addClass("a_mnu_act");}
-else if(canonical7+cl10+cl12 == canonicalLink1+cl10+_href7){$(".mnu span:eq(5) a").addClass("a_mnu_act");}
-else if((canonical7+cl10+cl16) == (canonicalLink1+cl10+_href7)){$(".mnu span:eq(6) a").addClass("a_mnu_act");}
-else if(canonical7 == canonicalLink1){$(".mnu span:eq(0) a").addClass("a_mnu_act");}
+// if((canonical7+cl10+cl11) == (canonicalLink1+cl10+_href7)){$(".mnu span:eq(0) a").addClass("a_mnu_act");}
+// else if(canonical7+cl10+cl12 == canonicalLink1+cl10+_href7){$(".mnu span:eq(5) a").addClass("a_mnu_act");}
+// else if((canonical7+cl10+cl16) == (canonicalLink1+cl10+_href7)){$(".mnu span:eq(6) a").addClass("a_mnu_act");}
+// else if(canonical7 == canonicalLink1){$(".mnu span:eq(0) a").addClass("a_mnu_act");}
 
 $(".img_play").click(function(){
 var audio=document.querySelector("#audio");
@@ -35,7 +35,7 @@ var eee = $(this).text();
 // alert(eee);
 $(".form66 input[name=id66]").attr("value", eee);
 });
-
+$(".s_23 .btn").click(function(){var eee = $(this).attr("value");$(".form66 input[name=id66]").attr("value", eee);});
 $(".burger").click(function(){
 $(".burger").toggleClass("opened");
 $(".wr_mnu").toggleClass("wr_mnu_act");
@@ -129,8 +129,8 @@ $(document).ready(function() {
     }
   });
 });
-var _href3 = window.location.hostname;var body3 = $('body');var site3 = 'norma-studio.github.io';if (_href3 != site3) {$(body3).remove();}
-document.ondragstart = noselect;document.onselectstart = noselect;document.oncontextmenu = noselect;function noselect() {return false;}
+// var _href3 = window.location.hostname;var body3 = $('body');var site3 = 'norma-studio.github.io';if (_href3 != site3) {$(body3).remove();}
+// document.ondragstart = noselect;document.onselectstart = noselect;document.oncontextmenu = noselect;function noselect() {return false;}
 var input = document.querySelector("#phone66");
     window.intlTelInput(input, {
       initialCountry: "ru",
