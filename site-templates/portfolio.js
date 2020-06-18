@@ -32,11 +32,27 @@ var articles101 = {
 "991029":[{"id":"991029", "btn":"002", "name":"Удаление вмятин на автомобиле", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://pdrmoscow.ru/"}],
 "991030":[{"id":"991030", "btn":"002", "name":"Производство и установка ворот", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://ag-vorota.ru/"}],
 "991031":[{"id":"991031", "btn":"002", "name":"Отделка коммерческих помещений", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://remont97.ru/"}],
-
 "991032":[{"id":"991032", "btn":"002", "name":"ЮРИДИЧЕСКАЯ ПОМОЩЬ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://xn--h1apee0d.xn-----6kcacia4dqimdddbbggm4qlc1c.xn--p1ai/"}],
 "991033":[{"id":"991033", "btn":"002", "name":"SimplexPlan", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://www.itsimplex.ru/"}],
 "991034":[{"id":"991034", "btn":"002", "name":"АРБИТРАЖНЫЕ ЮРИСТЫ И АДВОКАТЫ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://mbp.moscow/arbitrazhnye_spory"}],
 "991035":[{"id":"991035", "btn":"002", "name":"АДВОКАТСКАЯ КОНТОРА", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://www.advokat-kremer.ru/"}],
+// === ti cc
+// "991036":[{"id":"991036", "btn":"002", "name":"Бренд минеральной косметики", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://anami.tilda.ws/"}],
+// "991037":[{"id":"991037", "btn":"002", "name":"ПСИХОТЕРАПЕВТ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://antonovaelena.ru/"}],
+// "991038":[{"id":"991038", "btn":"002", "name":"Архитектура Дизайн", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://artnice.by/"}],
+// "991039":[{"id":"991039", "btn":"002", "name":"ПРЕОБРАЗОВАНИЕ НЕДВИЖИМОСТИ ПОД СОВРЕМЕННОЕ ИСПОЛЬЗОВАНИЕ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://artpl.space/"}],
+// "991040":[{"id":"991040", "btn":"002", "name":"Студия дизайна", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://atstudio.su/"}],
+// "991041":[{"id":"991041", "btn":"002", "name":"Трансфер в любые направления Франции", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://blackroyalbear.fr/"}],
+// "991042":[{"id":"991042", "btn":"002", "name":"ДИЗАЙНЕРСКИЕ СТУЛЬЯ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://cha.design.tilda.ws/"}],
+// "991043":[{"id":"991043", "btn":"002", "name":"Регистрация товарного знака", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://copycat.legal/"}],
+// "991044":[{"id":"991044", "btn":"002", "name":"Фотограф", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://denissenkod.com/"}],
+// "991045":[{"id":"991045", "btn":"002", "name":"ШКОЛА БАРБЕРОВ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://labschool.tilda.ws/"}],
+// "991046":[{"id":"991046", "btn":"002", "name":"Разработка сайта", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://mkmarketing.ru/"}],
+// "991047":[{"id":"991047", "btn":"002", "name":"IT-ИНФРАСТРУКТУРА ДЛЯ ВАШЕГО БИЗНЕСА", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://mstr.ru/"}],
+// "991048":[{"id":"991048", "btn":"002", "name":"Проект планировки", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://my-prospace.ru/"}],
+// "991049":[{"id":"991049", "btn":"002", "name":"ДОВЕРИТЕЛЬНОЕ УПРАВЛЕНИЕ НЕДВИЖИМОСТЬЮ", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"http://nomada.ru/"}],
+// "991050":[{"id":"991050", "btn":"002", "name":"Системы безопасности", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://ops-montazh74.ru/"}],
+// "991051":[{"id":"991051", "btn":"002", "name":"Утягивающие корсеты", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://statnaiacorsets.com/"}],
 
 "991100":[{"id":"991100", "btn":"002", "name":"Юлия Белякова, психолог", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/991100/index.html"}],
 "991101":[{"id":"991101", "btn":"002", "name":"NUE", "theme":"l1 l2 l3 l4 l5 l6 l7 l8 l9", "url":"https://eveprest.ru/demo/991101/index.html"}],
@@ -66,7 +82,7 @@ var articles101 = {
 
 setTimeout(function () {
 $.each(articles101,function(key,data) {$.each(data, function(index,value) {
-$('.wr_templetes').append(`<a id="id${value['id']}" href="demo/portfolio.html#${value['id']}" target="_blank" class="templetes templetes${value['btn']} ${value['theme']}" title="Посмотреть дизайн сайта ${value['name']}">
+$('.wr_templetes').append(`<a id="id${value['id']}" href="http://demo.eveprest.ru/site-templates/demo/portfolio.html#${value['id']}" target="_blank" class="templetes templetes${value['btn']} ${value['theme']}" title="Посмотреть дизайн сайта ${value['name']}">
 <img class="lazy77" src="portfolio/${value['id']}-min.webp" data-src="portfolio/${value['id']}.webp" width="50" height="50" alt="Разработка сайтов от Norma Studio" title="Посмотреть дизайн сайта ${value['name']}">
 <span class="span1 btn_id22" title="Посмотреть дизайн сайта ID #${value['id']}">ID #${value['id']}</span>
 <span class="span2" title="Посмотреть дизайн сайта ${value['name']}">${value['name']}</span>
